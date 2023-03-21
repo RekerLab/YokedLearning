@@ -15,5 +15,8 @@ For example, this is how we run the yoked deep learnig:
 python3 ActiveLearning.py --data_path alb/data/bace.csv --pure_columns mol --target_columns Class --dataset_type classification --metrics roc-auc mcc accuracy precision recall f1_score --learning_type explorative --model_config_selector model_config/RandomForest_Morgan_Config --split_type scaffold_order --split_sizes 0.5 0.5 --evaluate_stride 10 --seed 0 --save_dir test_al --model_config_extra_evaluators model_config/MLP_BinaryClassification_Morgan_Config
 ```
 
+## Datasets
+We have tested our algorithms on the datasets from Therapeutics Data Commons (https://github.com/mims-harvard/TDC), deepchem (https://deepchem.io) and MoleculeNet (https://moleculenet.org).
+
 ## Dependencies
 This code uses numpy, scipy, sklearn, numpy, deepchem, seaborn, matplotlib, chemprop, Therapeutics Data Commons (https://github.com/mims-harvard/TDC), and ActiveLearningBenchmark (https://github.com/RekerLab/ActiveLearningBenchmark).
