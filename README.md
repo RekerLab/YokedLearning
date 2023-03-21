@@ -16,4 +16,4 @@ python3 ActiveLearning.py --data_path alb/data/bace.csv --pure_columns mol --tar
 ```
 
 ## Dependencies
-This code uses numpy, scipy, sklearn, numpy, deepchem, seaborn, matplotlib, chemprop, and ActiveLearningBenchmark (https://github.com/RekerLab/ActiveLearningBenchmark).
+This code uses numpy, scipy, sklearn, numpy, deepchem, seaborn, matplotlib, chemprop, Therapeutics Data Commons (https://github.com/mims-harvard/TDC), and ActiveLearningBenchmark (https://github.com/RekerLab/ActiveLearningBenchmark).
