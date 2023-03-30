@@ -4,7 +4,7 @@ Example pipeline to evaluate yoked learning performance on both classical (part 
 ## Benchmarking Datasets
 * [Therapeutics Data Commons](https://github.com/mims-harvard/TDC)
 * [deepchem](https://deepchem.io)
-* [MoleculeNet](https://moleculenet.org).
+* [MoleculeNet](https://moleculenet.org)
 
 ## Dependencies
 * [numpy](https://numpy.org/)
