@@ -1,5 +1,9 @@
 # YokedLearning
-Example pipeline to evaluate yoked learning performance on both classical (part 1) and deep (part 2) machine learning models.
+
+![YokedLearning2](https://user-images.githubusercontent.com/127516906/229117268-a5e11bc9-1414-4bad-8cff-a88e833eccfd.png)
+
+
+Yoked machine learning utilizes a teacher model to guide a student model. We provide an example pipeline to evaluate yoked learning performance on both classical (part 1) and deep (part 2) machine learning models.
 
 ## Benchmarking Datasets
 * [Therapeutics Data Commons](https://github.com/mims-harvard/TDC)
