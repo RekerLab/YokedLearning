@@ -1,6 +1,7 @@
 # YokedLearning
 
-![YokedLearning2](https://user-images.githubusercontent.com/127516906/229117268-a5e11bc9-1414-4bad-8cff-a88e833eccfd.png)
+![YokedLearning4](https://user-images.githubusercontent.com/127516906/229135399-2e586506-45b3-4731-8192-6c356c666963.png)
+
 
 
 Yoked machine learning utilizes a teacher model to guide a student model. We provide an example pipeline to evaluate yoked learning performance on both classical (part 1) and deep (part 2) machine learning models.
