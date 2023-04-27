@@ -1,9 +1,4 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[ ]:
-
-
+# Import necessary libraries
 import sklearn
 import pandas as pd
 import numpy as np
@@ -26,10 +21,6 @@ from tdc.single_pred import Tox
 from sklearn.metrics import matthews_corrcoef as mcc
 
 from yoked_machine_learning_pipeline import teach
-
-
-# In[ ]:
-
 
 # Define Models
 model_rf = RF(n_jobs = -1)
@@ -55,11 +46,6 @@ teacher_list.append(model_log)
 teacher_list.append(model_nb)
 teacher_list.append(None)
     
-
-
-# In[ ]:
-
-
 if __name__ == '__main__':
     
     # Datasets come from https://tdcommons.ai
@@ -71,30 +57,25 @@ if __name__ == '__main__':
     teacher_results = []
     repeats = 1
     
+    # choose featurizer here by switching featurizer definition
     featurizer = dc.feat.CircularFingerprint()
     # featuzier = dc.feat.MACCSKeysFingerprint()
     # featurizer = dc.feat.RDKitDescriptors()
     
-    # Multiprocess running 
+    # Multiprocess running of yoked learning
     with Pool(processes=5) as pool:
         workers = [pool.apply_async(teach, args=(teacher, students_list, data, featurizer, metrics_list, repeats, False)) 
                    for teacher in teacher_list]
         teacher_results = [worker.get() for worker in workers]   
         
-    # Convert the output into dictionary format
+    # Convert the output into a dictionary labeled with the teacher and student names as keys
     index = 0
     for name in teachers_names:
         final_result[name] = teacher_results[index]
         index = index + 1
 
-    # Save the results
+    # Save the results as a file
     outfile = open(output_file,'wb')
     pickle.dump(final_result,outfile)
     outfile.close()
-
-
-# In[ ]:
-
-
-
 
