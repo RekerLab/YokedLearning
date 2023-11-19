@@ -20,7 +20,7 @@ Yoked machine learning utilizes a teacher model to guide a student model. We pro
 * [matplotlib](https://matplotlib.org/)
 * [seaborn](https://seaborn.pydata.org/)
 * [chemprop v1.5.2](https://github.com/chemprop/chemprop)
-* [ActiveLearningBenchmark](https://github.com/RekerLab/ActiveLearningBenchmark).
+* [MolALKit](https://github.com/RekerLab/MolALKit).
 
 ## Files 
 #### Part 1: Classical Yoked Learning
@@ -31,12 +31,11 @@ Yoked machine learning utilizes a teacher model to guide a student model. We pro
 
 #### Part 2: Deep Yoked Learning
 - Code and functions to evaluate yoked learning with deep learning models (MLP). 
-  - Implementation methods include [ActiveLearningBenchmark repository](https://github.com/RekerLab/ActiveLearningBenchmark), default MLP parameters (ffn_num_layers: 2, ffn_hidden_size: 300, dropout: 0, batch_size:50) or optimized MLP parameters [chemprop](https://github.com/chemprop/chemprop)
+  - Implementation methods include [MolALKit](https://github.com/RekerLab/MolALKit), default MLP parameters (ffn_num_layers: 2, ffn_hidden_size: 300, dropout: 0, batch_size:50) or optimized MLP parameters [chemprop](https://github.com/chemprop/chemprop)
   - **Single_dataset_comparison.ipynb** contains an example notebook that visualizes the output comparisons
  - Example implementation: 
 ```commandline
-python3 ActiveLearning.py --data_path alb/data/bace.csv --pure_columns mol --target_columns Class --dataset_type classification 
---metrics roc-auc mcc accuracy precision recall f1_score --learning_type explorative 
---model_config_selector model_config/RandomForest_Morgan_Config --split_type scaffold_order --split_sizes 0.5 0.5 
---evaluate_stride 10 --seed 0 --save_dir test_al --model_config_extra_evaluators model_config/MLP_BinaryClassification_Morgan_Config
+molalkit_run --data_public bace --metrics roc-auc --learning_type explorative --model_config_selector RandomForest_RDKitNorm_Config \
+    --split_type scaffold_order --split_sizes 0.5 0.5 --evaluate_stride 100 --seed 0 --save_dir bace_rf_yoked_mlp --n_jobs 4 \
+    --model_config_evaluators MLP_RDKitNorm_BinaryClassification_Config
 ```
