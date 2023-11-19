@@ -20,7 +20,7 @@ Yoked machine learning utilizes a teacher model to guide a student model. We pro
 * [matplotlib](https://matplotlib.org/)
 * [seaborn](https://seaborn.pydata.org/)
 * [chemprop v1.5.2](https://github.com/chemprop/chemprop)
-* [MolALKit](https://github.com/RekerLab/MolALKit).
+* [MolALKit](https://github.com/RekerLab/MolALKit)
 
 ## Files 
 #### Part 1: Classical Yoked Learning
