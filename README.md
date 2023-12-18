@@ -10,20 +10,31 @@ Yoked machine learning utilizes a teacher model to guide a student model. We pro
 * [Therapeutics Data Commons](https://github.com/mims-harvard/TDC)
   * ADME: Pharmaco-kinetics (from tdc.single_pred import ADME)
       * [CYP2C9 Substrate](https://tdcommons.ai/single_pred_tasks/adme/), Carbon-Mangels et al.
-        * Sub-sub-bullet point 1(data = ADME(name = 'CYP2C9_Substrate_CarbonMangels'))
-      * [CYP2D6 Substrate](https://tdcommons.ai/single_pred_tasks/adme/), Carbon-Mangels et al. (data = ADME(name = 'CYP2D6_Substrate_CarbonMangels'))
-      * [CYP3A4 Substrate](https://tdcommons.ai/single_pred_tasks/adme/), Carbon-Mangels et al. (data = ADME(name = 'CYP3A4_Substrate_CarbonMangels'))
-      * [HIA](https://tdcommons.ai/single_pred_tasks/adme/) (Human Intestinal Absorption), Hou et al. (data = ADME(name = 'HIA_Hou'))
-      * [Pgp](https://tdcommons.ai/single_pred_tasks/adme/) (P-glycoprotein) Inhibition, Broccatelli et al. (data = ADME(name = 'Pgp_Broccatelli'))
-      * [Bioavailability](https://tdcommons.ai/single_pred_tasks/adme/), Ma et al. (data = ADME(name = 'Bioavailability_Ma'))
+        * data = ADME(name = 'CYP2C9_Substrate_CarbonMangels')
+      * [CYP2D6 Substrate](https://tdcommons.ai/single_pred_tasks/adme/), Carbon-Mangels et al.
+        * data = ADME(name = 'CYP2D6_Substrate_CarbonMangels')
+      * [CYP3A4 Substrate](https://tdcommons.ai/single_pred_tasks/adme/), Carbon-Mangels et al. 
+        * data = ADME(name = 'CYP3A4_Substrate_CarbonMangels')
+      * [HIA](https://tdcommons.ai/single_pred_tasks/adme/) (Human Intestinal Absorption), Hou et al.
+        * data = ADME(name = 'HIA_Hou')
+      * [Pgp](https://tdcommons.ai/single_pred_tasks/adme/) (P-glycoprotein) Inhibition, Broccatelli et al.
+        * data = ADME(name = 'Pgp_Broccatelli')
+      * [Bioavailability](https://tdcommons.ai/single_pred_tasks/adme/), Ma et al.
+        * data = ADME(name = 'Bioavailability_Ma')
   * Tox: Toxicity (from tdc.single_pred import Tox)
-      * [hERG blockers](https://tdcommons.ai/single_pred_tasks/tox/), Wang et al. (data = Tox(name = 'hERG'))
-      * [DILI](https://tdcommons.ai/single_pred_tasks/tox/) (Drug Induced Liver Injury), Xu et al. (data = Tox(name = 'DILI'))
-      * [Skin Reaction](https://tdcommons.ai/single_pred_tasks/tox/), Alves et al. (data = Tox(name = 'Skin Reaction'))
-      * [Carcinogens](https://tdcommons.ai/single_pred_tasks/tox/), Lagunin, et al. (data = Tox(name = 'Carcinogens_Lagunin'))
-      * [Clintox](https://tdcommons.ai/single_pred_tasks/tox/), Gayvert, et al. (data = Tox(name = 'ClinTox'))
+      * [hERG blockers](https://tdcommons.ai/single_pred_tasks/tox/), Wang et al.
+        * data = Tox(name = 'hERG')
+      * [DILI](https://tdcommons.ai/single_pred_tasks/tox/) (Drug Induced Liver Injury), Xu et al.
+        * data = Tox(name = 'DILI')
+      * [Skin Reaction](https://tdcommons.ai/single_pred_tasks/tox/), Alves et al.
+        * data = Tox(name = 'Skin Reaction')
+      * [Carcinogens](https://tdcommons.ai/single_pred_tasks/tox/), Lagunin, et al.
+        * data = Tox(name = 'Carcinogens_Lagunin')
+      * [Clintox](https://tdcommons.ai/single_pred_tasks/tox/), Gayvert, et al.
+        * data = Tox(name = 'ClinTox')
   * HTS: High-Throughput Screening (from tdc.single_pred import HTS)
-      * [SARS-CoV-2 3CL Protease](https://tdcommons.ai/single_pred_tasks/hts/), Diamond (data = HTS(name = 'SARSCoV2_3CLPro_Diamond')) 
+      * [SARS-CoV-2 3CL Protease](https://tdcommons.ai/single_pred_tasks/hts/), Diamond
+        * data = HTS(name = 'SARSCoV2_3CLPro_Diamond')
 * [DeepChem](https://deepchem.io)
 * [MoleculeNet](https://moleculenet.org)
     * [BACE](https://moleculenet.org/datasets-1): Quantitative (IC50) and qualitative (binary label) binding results for a set of inhibitors of human β-secretase 1(BACE-1)
