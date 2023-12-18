@@ -9,8 +9,7 @@ Yoked machine learning utilizes a teacher model to guide a student model. We pro
 ## Benchmarking Datasets
 * [Therapeutics Data Commons](https://github.com/mims-harvard/TDC)
   * ADME: Pharmaco-kinetics (from tdc.single_pred import ADME)
-      * CYP2C9 Substrate, Carbon-Mangels et al.
-       * data = ADME(name = 'CYP2C9_Substrate_CarbonMangels')
+      * CYP2C9 Substrate, Carbon-Mangels et al. (data = ADME(name = 'CYP2C9_Substrate_CarbonMangels'))
       * CYP2D6 Substrate, Carbon-Mangels et al. (data = ADME(name = 'CYP2D6_Substrate_CarbonMangels'))
       * CYP3A4 Substrate, Carbon-Mangels et al. (data = ADME(name = 'CYP3A4_Substrate_CarbonMangels'))
       * HIA (Human Intestinal Absorption), Hou et al. (data = ADME(name = 'HIA_Hou'))
@@ -26,7 +25,7 @@ Yoked machine learning utilizes a teacher model to guide a student model. We pro
       * SARS-CoV-2 3CL Protease, Diamond (data = HTS(name = 'SARSCoV2_3CLPro_Diamond')) 
 * [DeepChem](https://deepchem.io)
 * [MoleculeNet](https://moleculenet.org)
-    * BACE: Quantitative (IC50) and qualitative (binary label) binding results for a set of inhibitors of human β-secretase 1(BACE-1)
+    * [BACE](https://deepchemdata.s3-us-west-1.amazonaws.com/datasets/bace.csv): Quantitative (IC50) and qualitative (binary label) binding results for a set of inhibitors of human β-secretase 1(BACE-1)
     * BBBP: Binary labels of blood-brain barrier penetration(permeability)
 
 ## Dependencies
