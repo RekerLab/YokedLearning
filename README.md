@@ -8,7 +8,7 @@ Yoked machine learning utilizes a teacher model to guide a student model. We pro
 
 ## Benchmarking Datasets
 * [**Therapeutics Data Commons**](https://github.com/mims-harvard/TDC)
-  * **ADME: Pharmaco-kinetics (from tdc.single_pred import ADME)**
+  * ADME: Pharmaco-kinetics (from tdc.single_pred import ADME)
       * [CYP2C9 Substrate](https://tdcommons.ai/single_pred_tasks/adme/), Carbon-Mangels et al.
         * data = ADME(name = 'CYP2C9_Substrate_CarbonMangels')
       * [CYP2D6 Substrate](https://tdcommons.ai/single_pred_tasks/adme/), Carbon-Mangels et al.
@@ -22,7 +22,7 @@ Yoked machine learning utilizes a teacher model to guide a student model. We pro
       * [Bioavailability](https://tdcommons.ai/single_pred_tasks/adme/), Ma et al.
         * data = ADME(name = 'Bioavailability_Ma')
        
-  * **Tox: Toxicity (from tdc.single_pred import Tox)**
+  * Tox: Toxicity (from tdc.single_pred import Tox)
       * [hERG blockers](https://tdcommons.ai/single_pred_tasks/tox/), Wang et al.
         * data = Tox(name = 'hERG')
       * [DILI](https://tdcommons.ai/single_pred_tasks/tox/) (Drug Induced Liver Injury), Xu et al.
@@ -34,7 +34,7 @@ Yoked machine learning utilizes a teacher model to guide a student model. We pro
       * [Clintox](https://tdcommons.ai/single_pred_tasks/tox/), Gayvert, et al.
         * data = Tox(name = 'ClinTox')
   
-  * **HTS: High-Throughput Screening (from tdc.single_pred import HTS)**
+  * HTS: High-Throughput Screening (from tdc.single_pred import HTS)
       * [SARS-CoV-2 3CL Protease](https://tdcommons.ai/single_pred_tasks/hts/), Diamond
         * data = HTS(name = 'SARSCoV2_3CLPro_Diamond')
           
