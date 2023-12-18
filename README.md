@@ -8,8 +8,25 @@ Yoked machine learning utilizes a teacher model to guide a student model. We pro
 
 ## Benchmarking Datasets
 * [Therapeutics Data Commons](https://github.com/mims-harvard/TDC)
+  * ADME: Pharmaco-kinetics (from tdc.single_pred import ADME)
+      * CYP2C9 Substrate, Carbon-Mangels et al. (data = ADME(name = 'CYP2C9_Substrate_CarbonMangels'))
+      * CYP2D6 Substrate, Carbon-Mangels et al. (data = ADME(name = 'CYP2D6_Substrate_CarbonMangels'))
+      * CYP3A4 Substrate, Carbon-Mangels et al. (data = ADME(name = 'CYP3A4_Substrate_CarbonMangels'))
+      * HIA (Human Intestinal Absorption), Hou et al. (data = ADME(name = 'HIA_Hou'))
+      * Pgp (P-glycoprotein) Inhibition, Broccatelli et al. (data = ADME(name = 'Pgp_Broccatelli'))
+      * Bioavailability, Ma et al. (data = ADME(name = 'Bioavailability_Ma'))
+  * Tox: Toxicity (from tdc.single_pred import Tox)
+      * hERG blockers, Wang et al. (data = Tox(name = 'hERG'))
+      * DILI (Drug Induced Liver Injury), Xu et al. (data = Tox(name = 'DILI'))
+      * Skin Reaction, Alves et al. (data = Tox(name = 'Skin Reaction'))
+      * Carcinogens, Lagunin, et al. (data = Tox(name = 'Carcinogens_Lagunin'))
+      * Clintox, Gayvert, et al. (data = Tox(name = 'ClinTox'))
+  * HTS: High-Throughput Screening (from tdc.single_pred import HTS)
+      * SARS-CoV-2 3CL Protease, Diamond (data = HTS(name = 'SARSCoV2_3CLPro_Diamond')) 
 * [DeepChem](https://deepchem.io)
 * [MoleculeNet](https://moleculenet.org)
+    * BACE: Quantitative (IC50) and qualitative (binary label) binding results for a set of inhibitors of human β-secretase 1(BACE-1)
+    * BBBP: Binary labels of blood-brain barrier penetration(permeability)
 
 ## Dependencies
 * [numpy](https://numpy.org/)
