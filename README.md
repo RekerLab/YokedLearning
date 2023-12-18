@@ -62,7 +62,8 @@ Yoked machine learning utilizes a teacher model to guide a student model. We pro
 - Code and functions to evaluate yoked learning with deep learning models (MLP). 
   - Implementation methods include [MolALKit](https://github.com/RekerLab/MolALKit), default MLP parameters (ffn_num_layers: 2, ffn_hidden_size: 300, dropout: 0, batch_size:50) or optimized MLP parameters [chemprop](https://github.com/chemprop/chemprop)
   - **Single_dataset_comparison.ipynb** contains an example notebook that visualizes the output comparisons
- - Example implementation after data split: 
+ - Please refer to [MolALKit](https://github.com/RekerLab/MolALKit) for details about Deep Yoked Learning implementations
+ - Example implementation after data split:
 ```commandline
 molalkit_run --data_public bace --metrics roc-auc --learning_type explorative --model_config_selector RandomForest_RDKitNorm_Config \
     --split_type scaffold_order --split_sizes 0.5 0.5 --evaluate_stride 100 --seed 0 --save_dir bace_rf_yoked_mlp --n_jobs 4 \
