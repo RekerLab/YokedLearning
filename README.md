@@ -39,6 +39,47 @@ Yoked machine learning utilizes a teacher model to guide a student model. We pro
     * [BACE](https://moleculenet.org/datasets-1): Quantitative (IC50) and qualitative (binary label) binding results for a set of inhibitors of human β-secretase 1(BACE-1)
     * [BBBP](https://moleculenet.org/datasets-1): Binary labels of blood-brain barrier penetration(permeability)
 
+## Benchmarking Datasets
+
+### Therapeutics Data Commons
+* [GitHub Repository](https://github.com/mims-harvard/TDC)
+
+#### ADME: Pharmaco-kinetics (from tdc.single_pred import ADME)
+* [CYP2C9 Substrate](https://tdcommons.ai/single_pred_tasks/adme/), Carbon-Mangels et al.
+  * Data: ADME(name = 'CYP2C9_Substrate_CarbonMangels')
+* [CYP2D6 Substrate](https://tdcommons.ai/single_pred_tasks/adme/), Carbon-Mangels et al.
+  * Data: ADME(name = 'CYP2D6_Substrate_CarbonMangels')
+* [CYP3A4 Substrate](https://tdcommons.ai/single_pred_tasks/adme/), Carbon-Mangels et al.
+  * Data: ADME(name = 'CYP3A4_Substrate_CarbonMangels')
+* [HIA](https://tdcommons.ai/single_pred_tasks/adme/) (Human Intestinal Absorption), Hou et al.
+  * Data: ADME(name = 'HIA_Hou')
+* [Pgp](https://tdcommons.ai/single_pred_tasks/adme/) (P-glycoprotein) Inhibition, Broccatelli et al.
+  * Data: ADME(name = 'Pgp_Broccatelli')
+* [Bioavailability](https://tdcommons.ai/single_pred_tasks/adme/), Ma et al.
+  * Data: ADME(name = 'Bioavailability_Ma')
+
+#### Tox: Toxicity (from tdc.single_pred import Tox)
+* [hERG blockers](https://tdcommons.ai/single_pred_tasks/tox/), Wang et al.
+  * Data: Tox(name = 'hERG')
+* [DILI](https://tdcommons.ai/single_pred_tasks/tox/) (Drug Induced Liver Injury), Xu et al.
+  * Data: Tox(name = 'DILI')
+* [Skin Reaction](https://tdcommons.ai/single_pred_tasks/tox/), Alves et al.
+  * Data: Tox(name = 'Skin Reaction')
+* [Carcinogens](https://tdcommons.ai/single_pred_tasks/tox/), Lagunin, et al.
+  * Data: Tox(name = 'Carcinogens_Lagunin')
+* [Clintox](https://tdcommons.ai/single_pred_tasks/tox/), Gayvert, et al.
+  * Data: Tox(name = 'ClinTox')
+
+#### HTS: High-Throughput Screening (from tdc.single_pred import HTS)
+* [SARS-CoV-2 3CL Protease](https://tdcommons.ai/single_pred_tasks/hts/), Diamond
+  * Data: HTS(name = 'SARSCoV2_3CLPro_Diamond')
+
+### MoleculeNet
+* [Website](https://moleculenet.org)
+  * [BACE](https://moleculenet.org/datasets-1): Quantitative (IC50) and qualitative (binary label) binding results for a set of inhibitors of human β-secretase 1 (BACE-1)
+  * [BBBP](https://moleculenet.org/datasets-1): Binary labels of blood-brain barrier penetration (permeability)
+
+
 ## Dependencies
 * [numpy](https://numpy.org/)
 * [scipy](https://scipy.org/)
