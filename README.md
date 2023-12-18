@@ -7,7 +7,7 @@
 Yoked machine learning utilizes a teacher model to guide a student model. We provide an example pipeline to evaluate yoked learning performance on both classical (part 1) and deep (part 2) machine learning models.
 
 ## Benchmarking Datasets
-* [**Therapeutics Data Commons**](https://github.com/mims-harvard/TDC)
+* [Therapeutics Data Commons](https://github.com/mims-harvard/TDC)
   * ADME: Pharmaco-kinetics (from tdc.single_pred import ADME)
       * [CYP2C9 Substrate](https://tdcommons.ai/single_pred_tasks/adme/), Carbon-Mangels et al.
         * data = ADME(name = 'CYP2C9_Substrate_CarbonMangels')
@@ -38,7 +38,7 @@ Yoked machine learning utilizes a teacher model to guide a student model. We pro
       * [SARS-CoV-2 3CL Protease](https://tdcommons.ai/single_pred_tasks/hts/), Diamond
         * data = HTS(name = 'SARSCoV2_3CLPro_Diamond')
           
-* [**MoleculeNet**](https://moleculenet.org)
+* [MoleculeNet](https://moleculenet.org)
     * [BACE](https://moleculenet.org/datasets-1): Quantitative (IC50) and qualitative (binary label) binding results for a set of inhibitors of human β-secretase 1(BACE-1)
     * [BBBP](https://moleculenet.org/datasets-1): Binary labels of blood-brain barrier penetration(permeability)
 
