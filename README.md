@@ -9,7 +9,8 @@ Yoked machine learning utilizes a teacher model to guide a student model. We pro
 ## Benchmarking Datasets
 * [Therapeutics Data Commons](https://github.com/mims-harvard/TDC)
   * ADME: Pharmaco-kinetics (from tdc.single_pred import ADME)
-      * CYP2C9 Substrate, Carbon-Mangels et al. (data = ADME(name = 'CYP2C9_Substrate_CarbonMangels'))
+      * CYP2C9 Substrate, Carbon-Mangels et al.
+       * data = ADME(name = 'CYP2C9_Substrate_CarbonMangels')
       * CYP2D6 Substrate, Carbon-Mangels et al. (data = ADME(name = 'CYP2D6_Substrate_CarbonMangels'))
       * CYP3A4 Substrate, Carbon-Mangels et al. (data = ADME(name = 'CYP3A4_Substrate_CarbonMangels'))
       * HIA (Human Intestinal Absorption), Hou et al. (data = ADME(name = 'HIA_Hou'))
