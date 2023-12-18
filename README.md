@@ -35,7 +35,6 @@ Yoked machine learning utilizes a teacher model to guide a student model. We pro
   * HTS: High-Throughput Screening (from tdc.single_pred import HTS)
       * [SARS-CoV-2 3CL Protease](https://tdcommons.ai/single_pred_tasks/hts/), Diamond
         * data = HTS(name = 'SARSCoV2_3CLPro_Diamond')
-* [DeepChem](https://deepchem.io)
 * [MoleculeNet](https://moleculenet.org)
     * [BACE](https://moleculenet.org/datasets-1): Quantitative (IC50) and qualitative (binary label) binding results for a set of inhibitors of human β-secretase 1(BACE-1)
     * [BBBP](https://moleculenet.org/datasets-1): Binary labels of blood-brain barrier penetration(permeability)
